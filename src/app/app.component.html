@@ -1,0 +1,39 @@
+<div class="globe-container">
+
+  <div class="globe" id="globe"></div>
+
+  <div id="country_details_div" class="country-details d-block">
+    <strong id="country_details_title" class="w-100">Client's Risk Portfolio</strong>
+    <div id="country_details_score">{{countryDetails}}</div>
+  </div>
+
+  <div class="globe-keys d-inline-flex">
+
+    <div class="d-inline-flex globe-key">
+      <div class="globe-key-block" [style]="{background: getScoreColour(null)}"></div>
+      <div>No Data</div>
+    </div>
+
+    <div class="d-inline-flex globe-key">
+      <div class="globe-key-block" [style]="{background: getScoreColour(2.5)}"></div>
+      <div>0 - 2.5</div>
+    </div>
+
+    <div class="d-inline-flex globe-key">
+      <div class="globe-key-block" [style]="{background: getScoreColour(5)}"></div>
+      <div>2.6 - 5</div>
+    </div>
+
+    <div class="d-inline-flex globe-key">
+      <div class="globe-key-block" [style]="{background: getScoreColour(7.5)}"></div>
+      <div>5.1 - 7.5</div>
+    </div>
+
+    <div class="d-inline-flex globe-key">
+      <div class="globe-key-block" [style]="{background: getScoreColour(7.6)}"></div>
+      <div>7.5+</div>
+    </div>
+
+  </div>
+
+</div>
